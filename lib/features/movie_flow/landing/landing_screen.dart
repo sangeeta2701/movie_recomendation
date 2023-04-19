@@ -1,4 +1,3 @@
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:movie_recommendation_app/core/constants.dart';
 import 'package:movie_recommendation_app/core/widgets/primary_button.dart';
