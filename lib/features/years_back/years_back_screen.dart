@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:movie_recommendation_app/core/constants.dart';
 import 'package:movie_recommendation_app/core/widgets/primary_button.dart';
+import 'package:movie_recommendation_app/features/movie_flow/result/result_screen.dart';
 
 class YearsBackScreen extends StatefulWidget {
   const YearsBackScreen(
@@ -49,19 +50,25 @@ class _YearsBackScreenState extends State<YearsBackScreen> {
             ),
             Spacer(),
             Slider(
-              max: 70,
-              min: 0,
-              divisions: 70,
-              label: "${yearsBack.ceil()}",
+                max: 70,
+                min: 0,
+                divisions: 70,
+                label: "${yearsBack.ceil()}",
                 value: yearsBack,
                 onChanged: (value) {
                   setState(() {
                     yearsBack = value;
                   });
                 }),
-                Spacer(),
-                PrimaryButton(onpressed: (){}, text: "Amazing"),
-                SizedBox(height: kMediumSpacing,)
+            Spacer(),
+            PrimaryButton(
+                onpressed: () {
+                  Navigator.of(context).push(ResultScreen.route());
+                },
+                text: "Amazing"),
+            SizedBox(
+              height: kMediumSpacing,
+            )
           ],
         ),
       ),
