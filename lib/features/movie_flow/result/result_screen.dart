@@ -14,7 +14,7 @@ class ResultScreen extends StatelessWidget {
   final double movieHeight = 150;
   final movie = Movie(
       title: "The Hulk",
-      overview: "Bruce Banner, a genetics with a tragic past",
+      overview: "Bruce Banner, a genetics with a tragic past,sufferes an accident that causes him to transform into a raging green monster when he gets angry.",
       voteAverage: 4.8,
       genres: [
         Genere(name: "Action"),

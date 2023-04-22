@@ -1,5 +1,4 @@
 import 'package:flutter/foundation.dart';
-import 'package:flutter/material.dart';
 import 'package:movie_recommendation_app/features/movie_flow/genre/genre.dart';
 
 @immutable
