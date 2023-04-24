@@ -52,7 +52,7 @@ class MovieFlowState {
         pageController: pageController ?? this.pageController,
         rating: rating ?? this.rating,
         yearsBack: yearsBack ?? this.yearsBack,
-        genres: genres ?? this.genres,
+        genres: genres,
         movie: movie ?? this.movie);
   }
 
